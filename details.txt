@@ -1,0 +1,50 @@
+Catan Details:
+
+Colors: Orange, Blue, Red, White
+ - 15 Roads
+ - 5 Settlements
+ - 4 Cities
+
+ Tiles: Wood (4), Brick (3), Wheat (4), Sheep (4), Stone (3), Desert(1)
+ - 19 Wood
+ - 19 Brick
+ - 19 Wheat
+ - 19 Sheep
+ - 19 Stone
+
+ Development Cards: Knight, Victory Point, Monopoly, Year Of Plenty, Road Building
+ - 14 Knights
+ - 5 Victory Points (Great Hall, Market, University, Library, Chapel)
+ - 2 Monopolies
+ - 2 Year Of Plenties
+ - 2 Road Buildings
+
+ Tile Number Possibilities (18)
+ - 2
+ - 3, 3
+ - 4, 4
+ - 5, 5
+ - 6, 6
+ - 8, 8
+ - 9, 9
+ - 10, 10
+ - 11, 11
+ - 12
+
+
+ Largest Army - 2 Victory Points
+ Longest Road - 2 Victory Points
+
+ map array idea [
+         [1, 2, 3]
+        [4, 5, 6, 7]
+     [8, 9, 10, 11, 12]
+      [13, 14, 15, 16]
+        [17, 18, 19]
+ ]
+
+Graphics I need:
+ - Wood, Brick, Wheat, Sheep, Stone, Desert (Cards)
+ - Settlement, Road, City
+ - Development Cards
+ - Probably many more i can't think of

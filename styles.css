@@ -1,0 +1,95 @@
+* {
+    padding:0;
+    margin: 0;
+}
+
+.top-row {
+    display:flex;
+}
+
+
+/* Top-Left */
+.bank {
+    width:50vh;
+    /* height:15vh; */
+    align-items: center;
+    display:flex;
+    background-color: coral;
+    border: 1px solid black;
+}
+
+.bank-resource {
+    width:5vh;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* Top-Middle */
+.player-hand {
+    width:100vh;
+    padding-left: 1vh;
+    padding-right: 1vh;
+    background-color: coral;
+    border: 1px solid black;
+}
+
+.player-cards {
+    width:5vh;
+    height: 10vh;
+}
+
+
+.top-right {
+    width:50vh;
+    background-color: coral;
+    border: 1px solid black;
+}
+
+
+.game-wrapper { /* Contains the Board */
+    border: 1px solid black;
+    background-color: rgb(9, 103, 166);
+}
+
+.row {
+    display: flex;
+    justify-content: center;
+    
+    align-items: center;
+    
+    
+}
+
+.tile {
+    /* border: 1px solid black; */
+    width:153px;
+    height:177px;
+    text-align: center;
+    background-image: url("images/tiles/water_tile.png");
+    position: relative;
+}
+
+.text0 {
+    justify-content: center;
+}
+
+#tile3, #tile4, #tile5, #tile6 {
+    top: -43.5px;
+    /* border: 1px solid black; */
+}
+
+.tile_tag {
+    padding-top: 30px;
+}
+
+#tile7, #tile8, #tile9, #tile10, #tile11 {
+    top: -86px;
+}
+
+#tile12, #tile13, #tile14, #tile15 {
+    top: -129px;
+}
+
+#tile16, #tile17, #tile18 {
+    top: -172.5px;
+}

@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="js/map.js" type="module"></script>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="top-row">
+        <div class="bank">
+            <img src="images/cards/resources/wood.bmp" class="bank-resource">
+            <img src="images/cards/resources/brick.bmp" class="bank-resource">
+            <img src="images/cards/resources/wheat.bmp" class="bank-resource">
+            <img src="images/cards/resources/sheep.bmp" class="bank-resource">
+            <img src="images/cards/resources/stone.bmp" class="bank-resource">
+        </div>
+    
+        <div class="player-hand">
+            <div class="player-options-top">
+                <img src="images/cards/resources/brick.bmp" class="player-cards">
+    
+    
+                <span class="player-options" id="build-road"></span>
+                <span class="player-options" id="build-settlement"></span>
+                <span class="player-options" id="build-city"></span>
+                <span class="player-options" id="timer"></span>
+                <span class="player-options" id="buy-dev-card"></span>
+                <span class="player-options" id="trade"></span>
+                <span class="player-options" id="end-or-roll"></span>
+            </div>
+    
+            <div class="player-options bottom">
+                <img src="images/cards/resources/wood.bmp" class="player-cards">
+                <img src="images/cards/resources/brick.bmp" class="player-cards">
+                <img src="images/cards/resources/wheat.bmp" class="player-cards">
+                <img src="images/cards/resources/sheep.bmp" class="player-cards">
+                <img src="images/cards/resources/stone.bmp" class="player-cards">
+                
+                <img src="images/cards/development/dev_back.bmp" class="player-cards">
+
+                <span class="player-item" id="player-vp-card"></span>
+                <span class="player-item" id="player-knight"></span>
+                <span class="player-item" id="player-monopoly"></span>
+                <span class="player-item" id="player-year-of-plenty"></span>
+                <span class="player-item" id="player-road-building"></span>
+            </div>
+        </div>
+        <div class="top-right"></div>
+    </div>
+
+
+
+
+    <div class="turn-history">
+        <h1>Turn History</h1>
+    </div>
+    
+    <!--Contains the Board --> 
+    <div class="game-wrapper">
+        <div class="row">
+            <div class="tile" id="tile0">
+                <!-- <img src="https://www.macmillandictionary.com/external/slideshow/full/White_full.png" id="image0"> -->
+
+
+
+                <h1 class="tile_tag" id="resource0">Tile0</h1>
+                <h3 class="tile_tag" id="number0">#</h3>
+            </div>
+            <div class="tile" id="tile1">
+                <h1 class="tile_tag" id="resource1">Tile1</h1>
+                <h3 class="tile_tag" id="number1">#</h3>
+            </div>
+
+            <div class="tile" id="tile2">
+                <h1 class="tile_tag" id="resource2">Tile2</h1>
+                <h3 class="tile_tag" id="number2">#</h3>
+            </div>
+
+        </div>
+        
+        <div class="row">
+            <div class="tile" id="tile3">
+                <h1 class="tile_tag" id="resource3">Tile3</h1>
+                <h3 class="tile_tag" id="number3">#</h3>
+            </div>
+            <div class="tile" id="tile4">
+                <h1 class="tile_tag" id="resource4">Tile4</h1>
+                <h3 class="tile_tag" id="number4">#</h3>
+            </div>
+
+            <div class="tile" id="tile5">
+                <h1 class="tile_tag" id="resource5">Tile5</h1>
+                <h3 class="tile_tag" id="number5">#</h3>
+            </div>
+
+            <div class="tile" id="tile6">
+                <h1 class="tile_tag" id="resource6">Tile6</h1>
+                <h3 class="tile_tag" id="number6">#</h3>
+            </div>
+
+
+        </div>
+
+        <div class="row">
+            <div class="tile" id="tile7">
+                <h1 class="tile_tag" id="resource7">Tile7</h1>
+                <h3 class="tile_tag" id="number7">#</h3>
+            </div>
+
+            <div class="tile" id="tile8">
+                <h1 class="tile_tag" id="resource8">Tile8</h1>
+                <h3 class="tile_tag" id="number8">#</h3>
+            </div>
+
+            <div class="tile" id="tile9">
+                <h1 class="tile_tag" id="resource9">Tile9</h1>
+                <h3 class="tile_tag" id="number9">#</h3>
+            </div>
+
+            <div class="tile" id="tile10">
+                <h1 class="tile_tag" id="resource10">Tile10</h1>
+                <h3 class="tile_tag" id="number10">#</h3>
+            </div>
+
+            <div class="tile" id="tile11">
+                <h1 class="tile_tag" id="resource11">Tile11</h1>
+                <h3 class="tile_tag" id="number11">#</h3>
+            </div>
+
+        </div>
+        <div class="row">
+            <div class="tile" id="tile12">
+                <h1 class="tile_tag" id="resource12">Tile12</h1>
+                <h3 class="tile_tag" id="number12">#</h3>
+            </div>
+
+            <div class="tile" id="tile13">
+                <h1 class="tile_tag" id="resource13">Tile13</h1>
+                <h3 class="tile_tag" id="number13">#</h3>
+            </div>
+
+            <div class="tile" id="tile14">
+                <h1 class="tile_tag" id="resource14">Tile14</h1>
+                <h3 class="tile_tag" id="number14">#</h3>
+            </div>
+
+            <div class="tile" id="tile15">
+                <h1 class="tile_tag" id="resource15">Tile15</h1>
+                <h3 class="tile_tag" id="number15">#</h3>
+            </div>
+
+        </div>
+
+        <div class="row">
+            <div class="tile" id="tile16">
+                <h1 class="tile_tag" id="resource16">Tile16</h1>
+                <h3 class="tile_tag" id="number16">#</h3>
+            </div>
+
+            <div class="tile" id="tile17">
+                <h1 class="tile_tag" id="resource17">Tile17</h1>
+                <h3 class="tile_tag" id="number17">#</h3>
+            </div>
+
+            <div class="tile" id="tile18">
+                <h1 class="tile_tag" id="resource18">Tile18</h1>
+                <h3 class="tile_tag" id="number18">#</h3>
+            </div>
+
+        </div>
+    </div>
+    <div class="leaderboard">
+        <div class="player" id="player-one">
+
+        </div>
+
+        <div class="player" id="player-two">
+
+        </div>
+
+        <div class="player" id="player-three">
+
+        </div>
+
+        <div class="player" id="player-four">
+
+        </div>
+    </div>
+</body>
+</html>
